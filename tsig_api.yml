@@ -1,0 +1,13 @@
+---
+:production:
+  :host: secure.txtsignal.com
+  :port: 443
+:staging:
+  :host: secure.txtsignal.com
+  :port: 443
+:test:
+  :host: secure.txtsignal.localhost
+  :port: 80
+:development:
+  :host: secure.txtsignal.com
+  :port: 443
