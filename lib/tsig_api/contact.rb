@@ -1,5 +1,4 @@
 require 'tsig_api/base'
-require 'rexml/document'
 
 module TsigApi
   class Contact < TsigApi::Base

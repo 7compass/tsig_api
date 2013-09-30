@@ -1,4 +1,3 @@
-require 'rexml/document'
 require 'tsig_api/base'
 
 module TsigApi

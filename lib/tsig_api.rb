@@ -1,4 +1,3 @@
-# Dynamic-tsig-api
 
 def build_global_element(elem)
   txtsig_api_config = YAML::load_file(File.join(Rails.root, "config/tsig_api.yml"))
@@ -21,10 +20,10 @@ module TsigApi
 
 end
 
-TsigApi::TXTSIG_HOST = build_global_element(:host) unless TsigApi.const_defined?(:TXTSIG_HOST)
-TsigApi::TXTSIG_PORT = build_global_element(:port) unless TsigApi.const_defined?(:TXTSIG_PORT)
-
+require 'rexml/document'
+require 'tsig_api/base'
+require 'tsig_api/carrier'
 require 'tsig_api/contact'
+require 'tsig_api/group'
 require 'tsig_api/message'
 require 'tsig_api/team'
-require 'tsig_api/carrier'

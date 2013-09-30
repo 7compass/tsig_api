@@ -1,4 +1,3 @@
-require 'rexml/document'
 require 'tsig_api/remote_actions'
 
 module TsigApi
@@ -12,6 +11,9 @@ module TsigApi
         @TXTSIG_CLIENT_ID = clientid
         @TXTSIG_API_USERNAME = username
         @TXTSIG_API_PASSWORD = password
+
+        TsigApi.send(:const_set, "TXTSIG_HOST", build_global_element(:host)) unless TsigApi.const_defined?(:TXTSIG_HOST)
+        TsigApi.send(:const_set, "TXTSIG_PORT", build_global_element(:port)) unless TsigApi.const_defined?(:TXTSIG_PORT)
       end
 
     end
