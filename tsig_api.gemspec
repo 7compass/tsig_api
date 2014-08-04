@@ -3,11 +3,11 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "tsig_api"
-  s.version     = "1.0.3"
+  s.version     = "1.0.4"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jeff Emminger", "Pete Taylor"]
   s.email       = ["jeff@7compass.com"]
-  s.homepage    = "https://github.com:7compass/tsig_api"
+  s.homepage    = "https://github.com/7compass/tsig_api"
   s.summary     = %q{TXTSignal.com API Client}
   s.description = %q{TXTSignal.com API Client!}
   s.rubyforge_project = "none"
