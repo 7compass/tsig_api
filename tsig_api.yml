@@ -3,11 +3,11 @@
   :host: secure.txtsignal.com
   :port: 443
 :staging:
-  :host: secure.txtsignal.com
+  :host: staging.txtsignal.com
   :port: 443
 :test:
   :host: secure.txtsignal.localhost
-  :port: 80
+  :port: 3000
 :development:
-  :host: secure.txtsignal.com
-  :port: 443
+  :host: secure.txtsignal.localhost
+  :port: 3000

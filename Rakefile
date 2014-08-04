@@ -16,7 +16,7 @@ end
 desc 'Generate documentation for the tsig_api plugin.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'Dynamic-tsig-api'
+  rdoc.title    = 'TSIG API'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')

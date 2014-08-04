@@ -49,7 +49,6 @@ module TsigApi
           # stop complaining about our cert since we upgraded to 
           # higher SHA2 hashing 
           self.http_process.verify_mode = OpenSSL::SSL::VERIFY_NONE
-
         end
       end
       
