@@ -21,6 +21,7 @@ module TsigApi
 end
 
 require 'rexml/document'
+require 'tsig_api/authorize'
 require 'tsig_api/base'
 require 'tsig_api/carrier'
 require 'tsig_api/contact'

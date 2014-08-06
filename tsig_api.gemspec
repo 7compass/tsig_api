@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "tsig_api"
-  s.version     = "1.0.4"
+  s.version     = "1.0.5"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jeff Emminger", "Pete Taylor"]
   s.email       = ["jeff@7compass.com"]
