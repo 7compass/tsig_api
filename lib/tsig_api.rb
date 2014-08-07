@@ -1,6 +1,7 @@
 
 def build_global_element(elem)
-  txtsig_api_config = YAML::load_file(File.join(Rails.root, "config/tsig_api.yml"))
+  txtsig_api_config = YAML.load(ERB.new(File.read("#{Rails.root}/config/tsig_api.yml")).result)
+
   rails_env = Rails.env.to_s || "development"
   return txtsig_api_config[rails_env.to_sym][elem]
 end
